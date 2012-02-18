@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "mailbag"
   s.version     = Mailbag::VERSION
   s.authors     = ["John Colvin"]
-  s.email       = ["colvin.68@osu.edu"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.email       = ["colvin.john@gmail.com"]
+  s.homepage    = "https://github.com/JohnColvin/mailbag"
+  s.summary     = %q{Rails gem that logs outgoing mail to a database table}
+  s.description = %q{Mailbag keeps track of the emails that your application sends out by logging them to a database table}
 
   s.rubyforge_project = "mailbag"
 
@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_dependency "actionmailer", "~> 3.2.1"
 end
