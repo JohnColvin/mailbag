@@ -1,4 +1,4 @@
-class CreateDelayedJobs < ActiveRecord::Migration
+class CreateEmailLogs < ActiveRecord::Migration
   def up
     create_table :email_logs do |t|
       t.string   :to
