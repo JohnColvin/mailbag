@@ -1,0 +1,1 @@
+require 'mailbag/rails/version'
