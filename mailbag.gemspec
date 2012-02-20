@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "mailbag/version"
+require "mailbag/rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "mailbag"
-  s.version     = Mailbag::VERSION
+  s.version     = Mailbag::Rails::VERSION
   s.authors     = ["John Colvin"]
   s.email       = ["colvin.john@gmail.com"]
   s.homepage    = "https://github.com/JohnColvin/mailbag"
