@@ -4,4 +4,4 @@ class MailbagLogger
   end
 end
 
-Mail.register_observer(MailbagLogger)
+ActionMailer::Base.register_observer(MailbagLogger)
